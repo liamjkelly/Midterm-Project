@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour {
 
-	float max, min;
+	public float max = 3f;
+	public float min = -3f;
 
 	// Use this for initialization
 	void Start () {
-		max = transform.position.x + 3;
-		min = transform.position.x - 3;
+		max += transform.position.x;
+		min += transform.position.x;
 	}
 	
 	// Update is called once per frame

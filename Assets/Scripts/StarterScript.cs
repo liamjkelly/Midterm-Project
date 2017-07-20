@@ -10,7 +10,7 @@ public class StarterScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//makse starter text disappear
-		if (Input.GetKeyDown(KeyCode.KeypadEnter)) {
+		if (Input.GetKeyDown(KeyCode.Return)) {
 			myText.text = "";
 		}
 	}
