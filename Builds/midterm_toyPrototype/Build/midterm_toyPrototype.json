@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "midterm_toyPrototype.data.unityweb",
+"asmCodeUrl": "midterm_toyPrototype.asm.code.unityweb",
+"asmMemoryUrl": "midterm_toyPrototype.asm.memory.unityweb",
+"asmFrameworkUrl": "midterm_toyPrototype.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}

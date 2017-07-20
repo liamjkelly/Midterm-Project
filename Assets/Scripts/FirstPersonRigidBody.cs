@@ -61,4 +61,8 @@ public class FirstPersonRigidBody : MonoBehaviour {
 		//set velocity directly = is good for walking
 		rb.velocity = worldVector * moveSpeed;
 	}
+
+	void OnCollisionEnter (Collision col) {
+		transform.position = initPos;
+	}
 }
