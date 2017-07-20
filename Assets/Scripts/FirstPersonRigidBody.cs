@@ -44,10 +44,7 @@ public class FirstPersonRigidBody : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Space)) {
 			inputVector.y += 3f;
 		}
-		if (Input.GetKeyUp(KeyCode.Space)) {
-			inputVector.y -= 3f;
-		}
-			
+
 	}
 	//FixedUpdate runs on a fixed interval with PhysX
 	//always put physics code in FixedUpdate
@@ -68,7 +65,8 @@ public class FirstPersonRigidBody : MonoBehaviour {
 		if (col.gameObject.tag == "fangirl") {
 			transform.position = initPos;
 		} else if (col.gameObject.tag == "stage") {
-			myText.text = "NOW YOU CAN RAGE";
+			myText.text = "NOW YOU CAN RAGE!!";
+			//transform.Rotate();
 		}
 	}
 }
