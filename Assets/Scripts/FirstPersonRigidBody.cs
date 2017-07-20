@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FirstPersonRigidBody : MonoBehaviour {
 
 	public float mouseSensitivty = 100f;
 	public float moveSpeed = 10f;
+	public Text myText;
 	Vector3 inputVector; //this variable passes data from Update > FixedUpdate
 	Rigidbody rb;
 	float mouseY; //accumulate mouseY data so we can clamp it later
@@ -63,6 +65,10 @@ public class FirstPersonRigidBody : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision col) {
-		transform.position = initPos;
+		if (col.gameObject.tag == "fangirl") {
+			transform.position = initPos;
+		} else if (col.gameObject.tag == "stage") {
+			myText.text = "NOW YOU CAN RAGE";
+		}
 	}
 }
