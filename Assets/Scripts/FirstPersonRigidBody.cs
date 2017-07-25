@@ -42,7 +42,7 @@ public class FirstPersonRigidBody : MonoBehaviour {
 
 		//code to jump
 		if (Input.GetKeyDown(KeyCode.Space)) {
-			inputVector.y += 3f;
+			inputVector.y += 15f;
 		}
 
 	}

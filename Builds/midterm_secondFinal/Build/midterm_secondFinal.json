@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "midterm_secondFinal.data.unityweb",
+"asmCodeUrl": "midterm_secondFinal.asm.code.unityweb",
+"asmMemoryUrl": "midterm_secondFinal.asm.memory.unityweb",
+"asmFrameworkUrl": "midterm_secondFinal.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
