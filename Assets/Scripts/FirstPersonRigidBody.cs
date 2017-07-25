@@ -40,11 +40,17 @@ public class FirstPersonRigidBody : MonoBehaviour {
 			Cursor.visible = false; //hides the cursor
 		}*/
 
-		//code to jump
-		if (Input.GetKeyDown(KeyCode.Space)) {
-			inputVector.y += 15f;
-		}
 
+		Ray jumpRay = new Ray (transform.position, -transform.up); //initialize ray
+		Debug.DrawRay (jumpRay.origin, jumpRay.direction * 1.5f, Color.yellow); //visualize raycast
+
+		if (Physics.Raycast(jumpRay, 1.5f)) {
+			//code to jump
+			if (Input.GetKeyDown(KeyCode.Space)) {
+				inputVector.y += 8f;
+			}
+
+		}
 	}
 	//FixedUpdate runs on a fixed interval with PhysX
 	//always put physics code in FixedUpdate
